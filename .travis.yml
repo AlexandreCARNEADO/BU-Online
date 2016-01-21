@@ -41,3 +41,15 @@ android:
   licenses:
     #- 'android-sdk-license-.+'
     #- 'google-gdk-license-.+'
+
+script:
+  - ./gradlew clean build connectedCheck -PdisablePreDex
+
+notifications:
+  email: false
+
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.gradle
