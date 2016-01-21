@@ -43,7 +43,9 @@ android:
     #- 'google-gdk-license-.+'
 
 script:
+  - chmod +x gradlew 
   - ./gradlew clean build connectedCheck -PdisablePreDex
+
 
 notifications:
   email: false
