@@ -54,3 +54,5 @@ before_cache:
 cache:
   directories:
     - $HOME/.gradle
+
+ant test
